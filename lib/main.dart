@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: new Center(
         child: new Image.asset('images/cake.png'),      
       ),
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Colors.red,
     );
   }
 }
