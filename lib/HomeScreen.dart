@@ -13,10 +13,19 @@ class _HomeScreenState extends State<HomeScreen> {
         title: new Text('Anand Bakery'),
         backgroundColor: Colors.red,
       ),
-      body: new Center(
-        child: new Text('Cheeku is the best'),
-       
-      ),    
+      body: Container(
+          constraints: BoxConstraints.expand(
+            height: Theme.of(context).textTheme.display1.fontSize * 1.1 + 200.0,
+          ),
+          padding: const EdgeInsets.all(8.0),
+          color: Colors.blue[600],
+          alignment: Alignment.center,
+          child: new Center(
+                child: new Text('The app works'),
+
+              ),
+          transform: Matrix4.rotationZ(0.1),
+        ),    
     );
   }
 }
